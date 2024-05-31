@@ -1,7 +1,7 @@
 -- Sample trigger to force reporting users to connect to the READ ONLY replica only.  Tested in SQL MI business critical
 -- Example prevents "mary" or "charlie" from connecting if the "Northwind" database is read/write. 
 -- Adjust logins and database name as needed.   
--- Warning - be sure to test any logic adjstments in a test environment.   Logic errors could lock you out of your server!
+-- Warning - be sure to test any logic adjustments in a test environment.   Logic errors could lock you out of your server!
 
 CREATE OR ALTER TRIGGER t_sql_mi_restriction
 ON ALL SERVER 
